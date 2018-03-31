@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Electrolize';
+  src: url('../fonts/Electrolize/Electrolize-Regular.eot');
+  src: url('../fonts/Electrolize/Electrolize-Regular.woff2') format('woff2'),
+       url('../fonts/Electrolize/Electrolize-Regular.woff') format('woff'),
+       url('../fonts/Electrolize/Electrolize-Regular.ttf') format('truetype'),
+       url('../fonts/Electrolize/Electrolize-Regular.svg#Electrolize-Regular') format('svg'),
+       url('../fonts/Electrolize/Electrolize-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aldrich';
+  src: url('../fonts/Aldrich/Aldrich-Regular.eot');
+  src: url('../fonts/Aldrich/Aldrich-Regular.woff2') format('woff2'),
+       url('../fonts/Aldrich/Aldrich-Regular.woff') format('woff'),
+       url('../fonts/Aldrich/Aldrich-Regular.ttf') format('truetype'),
+       url('../fonts/Aldrich/Aldrich-Regular.svg#Aldrich-Regular') format('svg'),
+       url('../fonts/Aldrich/Aldrich-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Rye';
+  src: url('../fonts/Rye/Rye-Regular.eot');
+  src: url('../fonts/Rye/Rye-Regular.woff2') format('woff2'),
+       url('../fonts/Rye/Rye-Regular.woff') format('woff'),
+       url('../fonts/Rye/Rye-Regular.ttf') format('truetype'),
+       url('../fonts/Rye/Rye-Regular.svg#Rye-Regular') format('svg'),
+       url('../fonts/Rye/Rye-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ewert';
+  src: url('../fonts/Ewert/Ewert-Regular.eot');
+  src: url('../fonts/Ewert/Ewert-Regular.woff2') format('woff2'),
+       url('../fonts/Ewert/Ewert-Regular.woff') format('woff'),
+       url('../fonts/Ewert/Ewert-Regular.ttf') format('truetype'),
+       url('../fonts/Ewert/Ewert-Regular.svg#Ewert-Regular') format('svg'),
+       url('../fonts/Ewert/Ewert-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DancingScript-Bold';
+  src: url('../fonts/Dancing/bold/DancingScript-Bold.eot');
+  src: url('../fonts/Dancing/bold/DancingScript-Bold.woff2') format('woff2'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.woff') format('woff'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.ttf') format('truetype'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.svg#DancingScript-Bold') format('svg'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-rye {
+	font-family: 'Rye', cursive;
+}
+
+.font-ewert {
+	font-family: 'Ewert', cursive;
+}
+
+.font-aldrich {
+    font-family: 'Aldrich', cursive;
+}
+
+.font-electrolize {
+    font-family: 'Electrolize', cursive;
+}
+
+.font-dancing {
+    font-family: 'DancingScript-Bold', cursive;
+}
+
+.normal-font {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Aldrich', cursive;
+}
+
+.subheading {
+	padding: 5px 10px;
+	background: #000;
+	color: #fff;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border: 1px solid blue;
+}
+
+ol {
+	list-style-type: upper-roman;
+}

@@ -1,0 +1,72 @@
+<h2 class="subheading">cxgf.GameObject APIs</h2>
+<div class="topic-table">
+    <div class="topic-row col-xs-12 col-sm-12 col-md-12">
+        <div class="topic-name col-xs-12 col-sm-4 col-md-3">
+            <b>
+                cxgf    <br/>
+                    .GameObject     <br/>
+                    .create (gameObjectConfig)   <br/>
+            </b>
+        </div>
+        <div class="topic-body col-xs-12 col-sm-8 col-md-9">
+            Creates and returns a new Game object. To create the new game object it takes a JSON parameter called gameObjectConfig.
+            <br/>
+            <label>gameObjectConfig</label>
+            <ol>
+                <li><b>x</b>: &lt;Number&gt; X Coordinate</li>
+                <li><b>y</b>: &lt;Number&gt; Y Coordinate</li>
+                <li><b>speed</b>: &lt;Number&gt; Defaults to 1</li>
+                <li><b>speedX</b>: &lt;Number&gt; Defaults to speed</li>
+                <li><b>speedY</b>: &lt;Number&gt; Defaults to speed</li>
+                <li><b>htmlId</b>: ID of HTML DOM element that represents this object</li>
+                <li><b>holdDirectionNTurns</b>: Used for random moves only. It indicates how many turns or ticks to wait before randomizing the direction again. Defaults to 10</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="topic-row col-xs-12 col-sm-12 col-md-12">
+        <div class="topic-name col-xs-12 col-sm-4 col-md-3">
+            <b>&lt;GameObjectInstance&gt; .move(direction)</b>
+        </div>
+
+        <div class="topic-body col-xs-12 col-sm-8 col-md-9">                    
+            Move the object in the given direction. <b>"direction"</b> can be any one of the following strings
+            <ol>
+                <li>
+                    "W" or "LEFT"
+                </li>
+                <li>
+                    "E" or "RIGHT"
+                </li>
+                <li>
+                    "N" or "UP"
+                </li>
+                <li>
+                    "S" or "DOWN"
+                </li>
+                <li>
+                    "RANDOM-4" (Default): Randomly move to any direction among E / W / N / S
+                </li>
+                <li>
+                    "RANDOM-8": Randomly move to any direction among E / W / N / S / NW / NE / SW/ SE (PENDING)
+                </li>
+                <li>
+                    "RANDOM-EW": Randomly move to any direction among E / W (PENDING)
+                </li>
+                <li>
+                    "RANDOM-NS": Randomly move to any direction among N / S (PENDING)
+                </li>
+            </ol>
+                
+        </div>
+    </div>
+
+    <div class="topic-row col-xs-12 col-sm-12 col-md-12">
+        <div class="topic-name col-xs-12 col-sm-4 col-md-3">
+            <b>&lt;GameObjectInstance&gt; .getAll(identifier)</b>
+        </div>
+        <div class="topic-body col-xs-12 col-sm-8 col-md-9">
+            Returns all the Game Objects that match(es) the provided identifier, e.g. identifier: {type: "ball"}
+        </div>
+    </div>
+</table>
