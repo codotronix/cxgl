@@ -195,7 +195,7 @@ ol.roman {
     left: 0;
     top: 0;
     bottom: 0;
-    background: #000063;
+    background: #1e1eda;
     width: 0px;
     padding: 40px 0 10px 0;
     font-size: 18px;
@@ -284,12 +284,12 @@ ol.roman {
     top: 0;
     bottom: 0;
     right: 0;
-    width: 9px;
-    background: #000063; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #000063 , #000027); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #000063, #000027); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #000063, #000027); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, #000063, #000027);
+    width: 15px;
+    background: #1e1eda; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #1e1eda , #000); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #1e1eda, #000); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #1e1eda, #000); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #1e1eda, #000);
 }
 
 ul.no-bullets {
