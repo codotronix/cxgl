@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CXGL - How to detect collision</title>
+    <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+</head>
+<body class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-12">
+        <p>
+            This example tests
+            <ol>
+                <li>cxgl.KeyEvent.onKeyPress(Key_Name, callbackFn, object)</li>
+                <li>cxgl.Collision.watch(objA, objB)</li>
+                <!-- <li>cxgl.Collision.startWatching()</li> -->
+            </ol>
+        </p>
+        <p>Left Arrow and Right Arrow should move Blue-Box</p>
+        <p>Up Arrow and Down Arrow should move Red-Box</p>
+        <label>Collision Counter: 
+            <span id="collisioncounter">0</span>
+        </label>
+        <div class="demo-box-container well">
+            <div id="box1" class="floating-box blue"></div>
+            <div id="box2" class="floating-box red"></div>
+        </div>
+    </div>
+
+
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../../dist/cxgl-dev.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

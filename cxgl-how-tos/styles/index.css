@@ -1,0 +1,336 @@
+@font-face {
+  font-family: 'Electrolize';
+  src: url('../fonts/Electrolize/Electrolize-Regular.eot');
+  src: url('../fonts/Electrolize/Electrolize-Regular.woff2') format('woff2'),
+       url('../fonts/Electrolize/Electrolize-Regular.woff') format('woff'),
+       url('../fonts/Electrolize/Electrolize-Regular.ttf') format('truetype'),
+       url('../fonts/Electrolize/Electrolize-Regular.svg#Electrolize-Regular') format('svg'),
+       url('../fonts/Electrolize/Electrolize-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aldrich';
+  src: url('../fonts/Aldrich/Aldrich-Regular.eot');
+  src: url('../fonts/Aldrich/Aldrich-Regular.woff2') format('woff2'),
+       url('../fonts/Aldrich/Aldrich-Regular.woff') format('woff'),
+       url('../fonts/Aldrich/Aldrich-Regular.ttf') format('truetype'),
+       url('../fonts/Aldrich/Aldrich-Regular.svg#Aldrich-Regular') format('svg'),
+       url('../fonts/Aldrich/Aldrich-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Rye';
+  src: url('../fonts/Rye/Rye-Regular.eot');
+  src: url('../fonts/Rye/Rye-Regular.woff2') format('woff2'),
+       url('../fonts/Rye/Rye-Regular.woff') format('woff'),
+       url('../fonts/Rye/Rye-Regular.ttf') format('truetype'),
+       url('../fonts/Rye/Rye-Regular.svg#Rye-Regular') format('svg'),
+       url('../fonts/Rye/Rye-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ewert';
+  src: url('../fonts/Ewert/Ewert-Regular.eot');
+  src: url('../fonts/Ewert/Ewert-Regular.woff2') format('woff2'),
+       url('../fonts/Ewert/Ewert-Regular.woff') format('woff'),
+       url('../fonts/Ewert/Ewert-Regular.ttf') format('truetype'),
+       url('../fonts/Ewert/Ewert-Regular.svg#Ewert-Regular') format('svg'),
+       url('../fonts/Ewert/Ewert-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DancingScript-Bold';
+  src: url('../fonts/Dancing/bold/DancingScript-Bold.eot');
+  src: url('../fonts/Dancing/bold/DancingScript-Bold.woff2') format('woff2'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.woff') format('woff'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.ttf') format('truetype'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.svg#DancingScript-Bold') format('svg'),
+       url('../fonts/Dancing/bold/DancingScript-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding-top: 30px;
+}
+
+iframe {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.fa {
+  user-select: none;
+}
+
+.font-rye {
+	font-family: 'Rye', cursive;
+}
+
+.font-ewert {
+	font-family: 'Ewert', cursive;
+}
+
+.font-aldrich {
+    font-family: 'Aldrich', cursive;
+}
+
+.font-electrolize {
+    font-family: 'Electrolize', cursive;
+}
+
+.font-dancing {
+    font-family: 'DancingScript-Bold', cursive;
+}
+
+.normal-font {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+	font-family: 'Aldrich', cursive;
+	font-size: 16px;
+}
+
+#manual-page {
+  color: #000063;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+  height: 85vh;
+}
+
+/*#manual-page .topic-table .topic-name,
+#manual-page .topic-table .topic-body {
+  overflow: auto;
+  word-break: break-word;
+  padding: 15px 5px;
+}
+
+#manual-page .topic-table .topic-row {
+  border-bottom: 1px solid lightblue;
+}
+
+#manual-page .topic-table .topic-body {
+  border-left: 1px solid lightblue;
+}
+
+#manual-page .module-details-container {
+  margin-top: 30px;
+}
+
+#manual-page .module-details-container .subheading {
+  text-align: center;
+  text-decoration: underline;
+}*/
+
+ul {
+  padding: 0;
+}
+
+.padding-top-5 {
+  padding: 5px;
+}
+
+.panel-heading h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+ol.roman {
+	list-style-type: lower-roman;
+}
+
+.demo-box-container {
+	position: relative;
+	height: 300px;
+	border: 1px inset #ccc;
+	overflow: hidden;
+}
+
+.demo-box-container div {
+  position: absolute;
+}
+
+.margin-top-15 {
+	margin-top: 15px;
+}
+
+.floating-box {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+}
+
+#ground {
+  position: absolute;
+  height: 10px;
+  width: 700px;
+  background: cadetblue;
+}
+
+.blue {
+	background: #00f;
+}
+
+.red {
+	background: #f00;
+}
+
+.orange {
+	background: orange;
+}
+
+.header {
+  position: fixed;
+  background: #000038;
+  left: 0;
+  right: 0;
+  top: 0;
+  color: #5fa4ff;
+  padding: 5px 7px;
+  font-size: 20px;
+  z-index: 99;
+}
+
+.left-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #000063;
+    width: 0px;
+    padding: 40px 0 10px 0;
+    font-size: 18px;
+    color: #f7f1f1;
+    overflow: hidden;
+    z-index: 9;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 1s;
+}
+
+.left-menu .copy-notice {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.leftbar-open .left-menu {
+  width: 200px;
+}
+
+.left-menu ul li {
+  display: block;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 5px 7px;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.left-menu ul li+li {
+  border-bottom: 2px solid #000;
+  border-top: none !important;
+}
+
+.left-menu ul li .selected-icon {
+    position: absolute;
+    top: -19px;
+    right: -3px;
+    font-size: 68px;
+    color: #fff;
+    display: none;
+}
+
+.left-menu ul li.selected .selected-icon {
+  display: inline-block;
+}
+
+.left-menu .title {
+  display: block;
+  padding: 5px 7px;
+  position: relative;
+}
+
+.left-menu .title .hide-left-bar {
+  position: absolute;
+  right: 10px;
+  top: -4px;
+  font-size: 25px;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+
+.leftbar-open .left-menu .title .hide-left-bar {
+  display: inline-block;
+}
+
+.show-left-bar {
+  position: relative;
+  font-size: 25px;
+  padding: 10px;
+  display: inline-block;
+  /*background: rgba(0, 0, 99, 0.45);*/
+  color: #000063;
+  /* top: 38px; */
+  /* left: 0; */
+  margin-top: 30px;
+  margin-left: -15px;
+  cursor: pointer;
+}
+
+.left-menu .right-shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 9px;
+    background: #000063; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #000063 , #000027); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #000063, #000027); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #000063, #000027); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #000063, #000027);
+}
+
+ul.no-bullets {
+  list-style: none;
+}
+
+.view-container {
+  /*margin-top: 50px;*/
+}
+
+.leftbar-open .view-container {
+  margin-left: 210px;
+}
+
+.collapse-header {
+    position: relative;
+}
+
+.collapse-header .collapse-key {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: none;
+    font-size: 25px;
+}
+
+.collapse-header.closed .down,
+.collapse-header.opened .up {
+    display: inline-block;
+}

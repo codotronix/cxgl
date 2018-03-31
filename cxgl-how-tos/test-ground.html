@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Codotronix Game Framework</title>
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/index.css">
+	</head>
+	<body class="container-fluid">
+
+		<h1>Testing Codotronix Game Framework (cxgl)</h1>
+
+
+		<div class="panel panel-primary">
+            <div class="panel-heading collapse-header">
+                <h3 class="panel-title">Test 1</h3>
+            </div>
+            <div class="panel-body collapse-body">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                	<p>
+                		This example tests
+                		<ol>
+                			<li>cxgl.KeyEvent.onKeyPress(Key_Name, callbackFn, object)</li>
+                			<li>cxgl.Collision.watch(objA, objB)</li>
+                			<!-- <li>cxgl.Collision.startWatching()</li> -->
+                		</ol>
+                	</p>
+                    <p>Left Arrow and Right Arrow should move Blue-Box</p>
+					<p>Up Arrow and Down Arrow should move Red-Box</p>
+					<label>Collision Counter: 
+						<span id="collisioncounter">0</span>
+					</label>
+					<div class="demo-box-container well">
+						<div id="box1" class="floating-box blue"></div>
+						<div id="box2" class="floating-box red"></div>
+                        <div id="ground"></div>
+					</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="panel panel-primary">
+            <div class="panel-heading collapse-header">
+                <h3 class="panel-title">Test 2</h3>
+            </div>
+            <div class="panel-body collapse-body">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                	<p>
+                		This example tests
+                		<ol>
+                			<li>cxgl.Ticker.onTick(callbackFn, Obj)</li>
+    						<li>cxgl.Ticker.startTick()</li>
+    						<li>cxgl.Ticker.stopTick()</li>
+                		</ol>
+                	</p>
+                    <p>This orange box should move automatically once ticker is started</p>
+					<p class="">
+						<button type="button" class="btn btn-primary" onclick="b3.x=550;b3.y=80;cxgl.Ticker.startTick()">Reset &amp; Start Ticker (Show Box)</button>					
+						<button type="button" class="btn btn-primary" onclick="cxgl.Ticker.stopTick();">Stop Ticker</button>
+					</p>		
+					<div class="demo-box-container well">
+						<div id="box3" class="floating-box orange"></div>		
+					</div>
+                </div>
+            </div>
+        </div>
+
+		<script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+		
+
+		<!-- cxgl scripts -->
+        <script type="text/javascript" src="../cxgl-modules/cxgl-init.js"></script>
+		<script type="text/javascript" src="../cxgl-modules/cxgl.Utils.js"></script>
+        <script type="text/javascript" src="../cxgl-modules/cxgl.Ticker.js"></script>
+        <script type="text/javascript" src="../cxgl-modules/cxgl.KeyEvent.js"></script>
+        <script type="text/javascript" src="../cxgl-modules/cxgl.Collision.js"></script>
+		<script type="text/javascript" src="../cxgl-modules/cxgl.GameObject.js"></script>
+
+		<!-- <script type="text/javascript" src="dist/cxgl.min.js"></script> -->
+
+		<script type="text/javascript" src="test-ground.js"></script>
+	</body>
+</html>
