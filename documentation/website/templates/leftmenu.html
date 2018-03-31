@@ -1,0 +1,16 @@
+<div class="left-menu">
+    <div class="right-shadow"></div>
+    <label class="title">
+        Menu
+        <span class="fa fa-bars hide-left-bar" data-ng-click="mvm.closeLeftBar()"></span>
+    </label>
+    <ul class="no-bullets">
+        <li data-ng-repeat="item in mvm.leftMenusItems" data-ng-click="mvm.loadView(item.url)" data-ng-class="{'selected': (item.pageID === $root.pageID)}">
+            {{item.text}}
+            <i class="fa fa-caret-left selected-icon"></i>
+        </li>
+    </ul>
+
+    <div class="copy-notice">&copy; Suman Barick</div>
+</div>
+<span class="fa fa-bars show-left-bar" data-ng-click="mvm.openLeftBar()"></span>

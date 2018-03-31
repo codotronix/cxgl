@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html data-ng-app="cxgl-web">
+<html data-ng-app="cxgf-web">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <title>cxgl - Codotronix Game Framework</title>
-        <link rel="stylesheet" type="text/css" href="www/lib/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="www/lib/font-awesome-4.7.0/css/font-awesome.min.css">        
-        <link rel="stylesheet" type="text/css" href="www/styles/index.css">
+        <title>CXGL - Codotronix Game Library</title>
+        <link rel="stylesheet" type="text/css" href="documentation/website/lib/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="documentation/website/lib/font-awesome-4.7.0/css/font-awesome.min.css">        
+        <link rel="stylesheet" type="text/css" href="documentation/website/styles/index.css">
     </head>
     <body class="container-fluid" 
         data-ng-class="{'leftbar-open': !$root.leftBarClosed}" 
         data-ng-controller="mainController as mvm">
 
-        <div data-ng-include="'www/templates/header.html'"></div>
-        <div data-ng-include="'www/templates/leftmenu.html'"></div>
+        <div data-ng-include="'documentation/website/templates/header.html'"></div>
+        <div data-ng-include="'documentation/website/templates/leftmenu.html'"></div>
         
         <div data-ng-view="" class="view-container"></div>
 
-        <script type="text/javascript" src="www/lib/js/jquery-2.2.4.min.js"></script>
-        <script type="text/javascript" src="www/lib/js/angular.min.js"></script>
-        <script type="text/javascript" src="www/lib/js/angular-route.min.js"></script>
-        <script type="text/javascript" src="www/js/app.js"></script>
-        <script type="text/javascript" src="www/js/mainController.js"></script>
-        <script type="text/javascript" src="www/js/homeController.js"></script>
-        <script type="text/javascript" src="www/js/demosController.js"></script>
-        <script type="text/javascript" src="www/js/manualController.js"></script>
-        <script type="text/javascript" src="www/js/seeInActionController.js"></script>
-        <script type="text/javascript" src="www/js/router.js"></script>
+        <script type="text/javascript" src="documentation/website/lib/js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="documentation/website/lib/js/angular.min.js"></script>
+        <script type="text/javascript" src="documentation/website/lib/js/angular-route.min.js"></script>
+        <script type="text/javascript" src="documentation/website/js/app.js"></script>
+        <script type="text/javascript" src="documentation/website/js/mainController.js"></script>
+        <script type="text/javascript" src="documentation/website/js/homeController.js"></script>
+        <script type="text/javascript" src="documentation/website/js/demosController.js"></script>
+        <script type="text/javascript" src="documentation/website/js/manualController.js"></script>
+        <script type="text/javascript" src="documentation/website/js/seeInActionController.js"></script>
+        <script type="text/javascript" src="documentation/website/js/router.js"></script>
         
 
-        <script type="text/javascript" src="dist/cxgl.js"></script>
+        <script type="text/javascript" src="dist/cxgf.js"></script>
 
 
     </body>

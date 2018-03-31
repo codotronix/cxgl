@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Codotronix Game Framework User Manual">
+        <meta name="author" content="Suman Barick">
+        <title>Codotronix Game Framework User Manual</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/index.css">
+    </head>
+    <body class="container-fluid">
+        <a href="javascript:void(0);" onclick="window.history.back();"> back </a>
+
+        <h1>Codotronix Game Framework User Manual</h1>
+
+        <h2 class="subheading">cxgf.GameObject</h2>
+        
+        <h3>APIs</h3>
+        <table class="table">
+
+
+            <!-- ROW cxgf.GameObject.create(gameObjectConfig) -->
+            <tr>
+                <td>
+                    <b>cxgf.GameObject.create(gameObjectConfig)</b>
+                </td>
+                <td>
+                    Creates and returns a new Game object. To create the new game object it takes a JSON parameter called gameObjectConfig.
+                    <br/>
+                    <label>gameObjectConfig</label>
+                    <ol>
+                        <li><b>x</b>: &lt;Number&gt; X Coordinate</li>
+                        <li><b>y</b>: &lt;Number&gt; Y Coordinate</li>
+                        <li><b>speed</b>: &lt;Number&gt; Defaults to 1</li>
+                        <li><b>speedX</b>: &lt;Number&gt; Defaults to speed</li>
+                        <li><b>speedY</b>: &lt;Number&gt; Defaults to speed</li>
+                        <li><b>htmlId</b>: ID of HTML DOM element that represents this object</li>
+                        <li><b>gravityOn</b>: true / false to turn gravity ON / OFF on this object</li>
+                        <li><b>holdDirectionNTurns</b>: Used for random moves only. It indicates how many turns or ticks to wait before randomizing the direction again. Defaults to 10</li>
+                    </ol>
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+            <!-- ROW cxgf.GameObject.getAll(identifier: JSON) -->
+            <tr>
+                <td>
+                    <b>cxgf.GameObject.getAll(identifier: JSON)</b>
+                </td>
+                <td>
+                    Returns all the Game Objects that match(es) the provided identifier
+                    <ol>
+                        <li>
+                            <b>cxgf.GameObject.getAll()</b> - when identifier is blank, it will return all the GameObjects
+                        </li>
+                        <li>
+                            <b>"identifier" can be a json</b>
+
+    <!-- ********* CAUTION: PRE BLOCK START *************** -->
+    <pre>
+    cxgf.GameObject.getAll({
+        type: "car",
+        color: "red"
+    })
+    </pre>
+    <!-- ********* CAUTION: PRE BLOCK END *************** -->
+                            
+                            It will return all the <i>red car</i> GameObjects
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <b>&lt;GameObjectInstance&gt;.move(direction)</b>
+                </td>
+
+                <td>                    
+                    Move the object in the given direction. <b>"direction"</b> can be any one of the following strings
+                    <ol>
+                        <li>
+                            "W" or "LEFT"
+                        </li>
+                        <li>
+                            "E" or "RIGHT"
+                        </li>
+                        <li>
+                            "N" or "UP"
+                        </li>
+                        <li>
+                            "S" or "DOWN"
+                        </li>
+                        <li>
+                            "RANDOM-4" (Default): Randomly move to any direction among E / W / N / S
+                        </li>
+                        <li>
+                            "RANDOM-8": Randomly move to any direction among E / W / N / S / NW / NE / SW/ SE (PENDING)
+                        </li>
+                        <li>
+                            "RANDOM-EW": Randomly move to any direction among E / W (PENDING)
+                        </li>
+                        <li>
+                            "RANDOM-NS": Randomly move to any direction among N / S (PENDING)
+                        </li>
+                    </ol>
+                        
+                </td>
+            </tr>
+
+            
+        </table>
+
+        <script type="text/javascript" src="../../js/lib/jquery-2.2.4.min.js"></script>
+    </body>
+</html>
