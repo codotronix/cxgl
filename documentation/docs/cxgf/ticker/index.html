@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Codotronix Game Framework User Manual">
+        <meta name="author" content="Suman Barick">
+        <title>Codotronix Game Framework User Manual</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/index.css">
+    </head>
+    <body class="container-fluid">
+        <a href="javascript:void(0);" onclick="window.history.back();"> back </a>
+
+        <h1>Codotronix Game Framework User Manual</h1>
+
+        <h2 class="subheading">cxgf.Ticker</h2>
+        
+        <h3>APIs</h3>
+        <table class="table">
+
+
+            <tr>
+                <td>
+                    <b>cxgf.Ticker.onTick (callbackFn, bindingObj, skipInterval)</b>
+                    <br>
+                    returns <b>tickListenerID</b>
+                </td>
+                <td>
+                    A function to be executed on each tick of the game cycle, probably lies somewhere between 30fps to 60fps
+                    <br>
+                    <label>Parameters</label>
+                    <ol>
+                        <li>
+                            <b>callbackFn:</b>
+                            The function to be executed each time a tick happens
+                        </li>
+                        <li>
+                            <b>bindingObj:</b>
+                            The object on which the abve mentioned callbackFn to be executed, to preserve the original "this" object
+                        </li>
+                        <li>
+                            <b>skipInterval:</b>
+                            (number) If our function needs not be called in each tick, but to be skipped certain number of ticks, we will pass that Integer (whole number) here
+                        </li>
+                    </ol>
+                    <br>
+                    <label>Return</label>
+                    It returns a <b>tickListenerID</b> which can be used later to remove a callback function from being executed on ticks
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+            <tr>
+                <td>
+                    <b>cxgf.Ticker.removeTick (tickListenerID)</b>
+                </td>
+                <td>
+                    If we want a function (say FnX) to be removed from tick callback list, we can do that by using this function. We just need to pass the <b>tickListenerID</b> which we got back from <b>cxgf.Ticker.onTick</b> while adding FnX to the tick listener list.
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+            <tr>
+                <td>
+                    <b>cxgf.Ticker.startTick ()</b>
+                </td>
+                <td>
+                    Use this function to start the ticker
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+            <tr>
+                <td>
+                    <b>cxgf.Ticker.stopTick ()</b>
+                </td>
+                <td>
+                    Use this function to stop the ticker
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+        </table>
+
+        <script type="text/javascript" src="../../js/lib/jquery-2.2.4.min.js"></script>
+    </body>
+</html>

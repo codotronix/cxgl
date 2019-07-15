@@ -1,3 +1,14 @@
 <h1>Demos</h1>
 
-<a href="https://codotronix.github.io/bob" target="_blank">Beware of Boxes!</a>
+<div class="row">
+  <div class="col-sm-6 col-md-4" ng-repeat="d in vm.demos">
+    <div class="thumbnail">
+      <img ng-src="{{d.img}}" alt="image thumbnail for {{d.name}}">
+      <div class="caption">
+        <h3>{{d.name}}</h3>
+        <p>{{d.desc}}</p>
+        <p><a href="{{d.url}}" class="btn btn-primary btn-block" role="button">Play</a></p>
+      </div>
+    </div>
+  </div>
+</div>

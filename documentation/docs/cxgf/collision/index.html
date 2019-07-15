@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Codotronix Game Framework User Manual">
+        <meta name="author" content="Suman Barick">
+        <title>Codotronix Game Framework User Manual</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/index.css">
+    </head>
+    <body class="container-fluid">
+        <a href="javascript:void(0);" onclick="window.history.back();"> back </a>
+
+        <h1>Codotronix Game Framework User Manual</h1>
+
+        <h2 class="subheading">cxgf.Collision</h2>
+        
+        <h3>APIs</h3>
+        <table class="table">
+
+
+            <tr>
+                <td>
+                    <b>cxgf.Collision.watch (gameObject1, gameObject2)</b>
+                    <br>OR<br>
+                    <b>cxgf.Collision.watch (gameObjectArray1, gameObjectArray2)</b>
+                </td>
+                <td>
+                    Add certain game gaobjects to the collision watch. Whenever a collision is detected on any of those object, the "onCollision" function (if defined) will be called on that object. See respective documentation on <b>cxgf.GameObject.create(gameObjectConfig)</b> for more details on <b>onCollision</b> function 
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+            <tr>
+                <td>
+                    <b>cxgf.Collision.isColliding (gameObject1, gameObject2)</b>
+                    <br>OR<br>
+                    <b>cxgf.Collision.isColliding (gameObjectArray1, gameObjectArray2)</b>
+                    <br>
+                    returns <b>boolean</b>
+                </td>
+                <td>
+                    returns <b>true / false</b> depending on whether there currently is a collision 
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+
+            
+
+        </table>
+
+        <script type="text/javascript" src="../../js/lib/jquery-2.2.4.min.js"></script>
+    </body>
+</html>
