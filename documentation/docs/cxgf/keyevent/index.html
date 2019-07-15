@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Codotronix Game Framework User Manual">
+        <meta name="author" content="Suman Barick">
+        <title>Codotronix Game Framework User Manual</title>
+        <link rel="stylesheet" type="text/css" href="../../styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../styles/index.css">
+    </head>
+    <body class="container-fluid">
+        <a href="javascript:void(0);" onclick="window.history.back();"> back </a>
+
+        <h1>Codotronix Game Framework User Manual</h1>
+
+        <h2 class="subheading">cxgf.KeyEvent</h2>
+        
+        <h3>APIs</h3>
+        <table class="table">
+
+
+            <tr>
+                <td>
+                    <b>cxgf.KeyEvent.onKeyPress (cxgf.KeyEvent.keys.KEY_NAME, callbackFn, bindingObject)</b>
+                </td>
+                <td>
+                    This function binds a user defined callback function to a keyboard keypress event. We can also pass the binding object as 3rd parameter if we want to use the original 'this' variable inside that function when the callback happens. 
+                    <br>
+                    Use case can be, say, we have a "moveLeft" function which should be executed whenever the player presses the "LEFT" arrow key on the keyboard, so we would define it like this,
+                    <br>
+                    <pre>cxgf.KeyEvent.onKeyPress(cxgf.KeyEvent.keys.LEFT, player.moveLeft, player);</pre>
+
+                    <br/>
+                    <label>Parameters</label>
+                    <ol>
+                        <li>
+                            <b>cxgf.KeyEvent.keys.KEY_NAME</b>: 
+                            a predefined value for each keyboard keypress. Details are below in its own section
+                        </li>
+                        
+                        <li>
+                            <b>callbackFn</b>:
+                            A callback function that will be executed each time the keyboard key is pressed (e.g. player.moveLeft in our above example)
+                        </li>
+
+                        <li>
+                            <b>bindingObject</b>:
+                            If the above callback function is defined on sone object and we want to use some other properties defined on that object (say, speed or spaceshipColor etc), we need to pass the original object to retain the actual value of "this" when the callback happens (e.g. "player" in our above example).
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <!-- ******************************************** -->
+
+
+            <!-- ROW cxgf.GameObject.getAll(identifier: JSON) -->
+            <tr>
+                <td>
+                    <b>cxgf.KeyEvent.keys.KEY_NAME</b>
+                </td>
+                <td>
+                    List of keyboard keys available for binding
+                    <br>
+                    
+                    "LEFT", "UP", "RIGHT", "DOWN", "SPACE", "TAB", "SHIFT", "CTRL", "ALT", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "ZERO"                       
+
+                </td>
+            </tr>
+        </table>
+
+        <script type="text/javascript" src="../../js/lib/jquery-2.2.4.min.js"></script>
+    </body>
+</html>
