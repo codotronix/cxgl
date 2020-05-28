@@ -2,7 +2,7 @@
 Codotronix Game Library
 
 # User Manual
-I have just started creating the User Manual for cxgl. Please find it [here](https://codotronix.github.io/cxgl/docs/index.html)
+I have just started creating the User Manual for cxgl. Please find it [here](https://codotronix.github.io/cxgl/documentation/docs/index.html)
 
 
 # Demos
