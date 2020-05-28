@@ -8,6 +8,6 @@ I have just started creating the User Manual for cxgl. Please find it [here](htt
 # Demos
 Demos are also in progress...
 
-1. <a href="https://codotronix.github.io/cxgl/cxgl-how-tos/index.html" target="_blank">Test Page</a>
+1. <a href="https://codotronix.github.io/cxgl/documentation/cxgl-how-tos/index.html" target="_blank">Test Page</a>
 
 2. <a href="https://codotronix.github.io/bob" target="_blank">Beware of Boxes!</a>
